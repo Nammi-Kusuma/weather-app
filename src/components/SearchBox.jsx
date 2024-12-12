@@ -35,6 +35,7 @@ export default function SearchBox({ updateWeather }) {
     }
 
     let handleSubmit = async (event) => {
+        setError(false);
         try {
             event.preventDefault();
             setCity("");
